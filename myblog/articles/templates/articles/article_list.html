@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+        <h1> ARTICLE LIST</h1>
+        <div class="articles">
+            {% for article in articles %}
+              <div class="article">
+                <a  class="asdf wrapper" href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
+                  <h4>{{article.snippet}}</h4>
+                  <p>{{article.date}}</p>
+                  <p class="author">Added by {{article.author.username}}</p>
+              </div>
+              
+            {% endfor %}
+        </div>
+      
+{% endblock %}

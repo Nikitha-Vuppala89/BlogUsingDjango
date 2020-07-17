@@ -1,0 +1,119 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url(/static/rkk.jpg)  ;
+    /*height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+h1{
+    font-style: italic;
+    color:#434476;
+    padding-top:-50px;
+}
+h2{
+    font-style: italic;
+   color:#020202;
+   font-size:xx-large
+}
+p{
+    font-size-adjust: inherit;
+    color: #242bbb;
+}
+h4{
+    color:rgb(0, 0, 0);
+}
+.asdf{
+    font-size:larger;
+    font-style: italic;
+    color: #961e9a;
+}
+.wrapper{
+    max-width:960px;
+    margin: 0 auto;
+}
+div.wrapper h1{
+    text-align:center;
+    margin: 100px auto;
+    margin-top:20px;
+    font-size:2.4em;
+
+}
+header{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:20px 0;
+}
+nav{
+    justify-self:end;
+}
+nav li{
+    display:inline-block;
+    margin-left:200px;
+}
+nav button{
+    background:none;
+    color:black;
+    cursor:pointer;
+    border:0;
+    font-size:1.4em;
+}
+.articles{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:30px;
+}
+.article{
+    padding:10px;
+    border:1px solid #000c2f;
+    position:relative;
+    padding:20px;
+}
+.article a{
+    font-size:larger
+}
+
+
+
+.site-form{
+    margin-top:60px;
+    border:1px solid ;
+    padding:20px;
+
+}
+.site-form input, .site-form textarea{
+    display:block;
+    margin:20px 0 0 0;
+    padding:10px;
+}
+
+.article .author{
+    padding:10px;
+    background :gray;
+    position:absolute;
+    right:0;
+    bottom:0;
+    margin:0;
+    color:#47ffb3;
+}
+a.highlight{
+    position:absolute;
+    left: 1240px;
+    top:105px;
+    text-decoration:none;
+    font-size:23px;
+    color:black;
+    font-style:bold;
+}
+.logout-link{
+    padding-left:600px;
+    font-size:25px;
+    color:black;
+}
+

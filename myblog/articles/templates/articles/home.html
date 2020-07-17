@@ -1,0 +1,75 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<h1> ARTICLE LIST</h1>
+<h2>Musical Instruments</h2>
+<div class="articles">
+    {%for article in articles%}
+    {%if article.category == 'music'%}
+    <div class="article">
+        <a class="asdf wrapper" href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
+        <h4>{{article.snippet}}</h4>
+        <p>{{article.date}}</p>
+        <p class="author">Added by {{article.author.username}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<br><br>
+<h2>Species</h2>
+<div class="articles">
+    {%for article in articles%}
+    {%if article.category == 'species'%}
+    <div class="article">
+        <a class="asdf wrapper" href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
+        <h4>{{article.snippet}}</h4>
+        <p>{{article.date}}</p>
+        <p class="author">Added by {{article.author.username}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<br><br>
+
+<h2>Physical Activity</h2>
+<div class="articles">
+    {%for article in articles%}
+    {%if article.category == 'physical activity'%}
+    <div class="article">
+        <a class="asdf wrapper" href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
+        <h4>{{article.snippet}}</h4>
+        <p>{{article.date}}</p>
+        <p class="author">Added by {{article.author.username}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<br><br>
+<h2>Food</h2>
+<div class="articles">
+    {%for article in articles%}
+    {%if article.category == 'food'%}
+    <div class="article">
+        <a class="asdf wrapper" href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
+        <h4>{{article.snippet}}</h4>
+        <p>{{article.date}}</p>
+        <p class="author">Added by {{article.author.username}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<br><br>
+<h2>Others</h2>
+<div class="articles">
+    {%for article in articles%}
+    {%if article.category == 'others'%}
+    <div class="article">
+        <a class="asdf wrapper" href="{% url 'articles:detail' slug=article.slug %}">{{article.title}}</a>
+        <h4>{{article.snippet}}</h4>
+        <p>{{article.date}}</p>
+        <p class="author">Added by {{article.author.username}}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% endblock %}
